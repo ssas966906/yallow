@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yallow</title>
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="./style/media.css">
+  <style>
+    .popup{
+      position: fixed;
+      width: min(50%,500px);
+      padding: 5% 2%;
+      font-size: 1.8rem;
+      line-height: 1.75;
+      background-color: #fff;
+      z-index: 9999999;
+      top:10%;
+      left:30%;
+      box-shadow:0 0 45px rgba(0, 0, 0, .4);
+    }
+    .popup>span {
+      /* user-select: none; */
+      cursor: pointer;
+      position: absolute;
+      background-color: gray;
+      padding: 1% 3%;
+      right: 10%;
+      bottom: 10%;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- .wrap>header>.menu_wrap+.main_video_wrap -->
+  <div class="popup">
+    해당 사이트는 학습용으로 제작되었으며 얄로와 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다. <span>닫기</span>
+  </div>
+  <div class="wrap">
+    <header>
+      <div class="menu_wrap inner"> 안에
+        <div class="df">행
+          <h1 class="logo"> 큰제목
+            <a class="h1" href="#">theYallow</a>큰제목
+          </h1>
+          <nav class="box_shadow">박스안에그림자를 생성 nav는 ul을 생성
+            <ul class="gnb">
+              <li><i class="fa-solid fa-user link"></i><a href="#">about us</a></li>
+              <li><i class="fa-solid fa-wrench link"></i><a href="#">services</a></li>
+              <li><i class="fa-solid fa-envelope link"></i><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div> <!-- //.menu_wrap -->
+      <div class="main_video_wrap">
+        <div class="inner df pr">
+          <div class="left video"></div> <!-- //.left -->
+          <div class="right">
+            <h2 class="h1">The cool</h2> class가 왜붙는가
+            <h3>the minimal</h3>점점작아지는 제목
+            <button class="pr h6 box_shadow">sign up</button>
+          </div> <!-- //.right -->
+          <div class="controls">
+            <img src="./imgs/prev.svg" alt="prev">
+            <img src="./imgs/next.svg" alt="next">
+          </div> <!-- //.controls -->
+        </div> <!-- //.inner -->
+      </div> <!-- //.main_video_wrap -->
+    </header>
+    <main>
+      <section class="icon_area">
+      <div class="inner">
+        <ul class="icons df">
+          <li class="item">
+            <img src="./imgs/icon1.svg" alt="">
+            <span class="h5">better design</span>
+          </li>
+          <li class="item"><img src="./imgs/icon2.svg" alt="">
+          <span class="h5">customise</span></li>
+          <li class="item"><img src="./imgs/icon3.svg" alt="">
+          <span class="h5">its free</span></li>
+        </ul>
+      </div>
+      </section>
+      <section class="section1">
+        <div class="inner">
+          <h2>title</h2>
+          <div class="df">
+            <div class="news_wrap df">
+              <div class="item text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi aperiam ipsum esse sunt asperiores rem, sed explicabo dolorem dolores? Unde ut tenetur nam assumenda nulla, fuga dignissimos dolores libero.
+              </div>
+              <div class="item video"></div>
+              <div class="item date">
+                <span class="h1">25</span><span class="h5">april</span>
+              </div>
+            </div>
+            <div class="sns_wrap">
+            <div class="twitter_icon">
+              <img src="./imgs/twitter.svg" alt="twitter">
+            </div>
+            <div class="twitter_chat">
+              <div class="twit_item_pr">
+                <p class="tweet_msg">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> via @mango
+                </p>
+              </div>
+              <div class="twit_post">
+                <form action="#" method="get">
+                  <input type="seach">
+                  <button type="submit">tweet</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="range">
+          <input type="text" min="0" max="900" step="1" value="300">
+        </div>
+      </section>
+      <section class="sention2">
+        <div class="inner">
+          <h2></h2>
+          <div class="df">
+            <div class="benefit_wrap df">
+              <img src="./imgs/device1.png" alt="pc">
+              <img src="./imgs/device2.png" alt="tablet">
+              <img src="./imgs/device3.png" alt="mobile">
+            </div>
+          <ul class="benefit_wrap text">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="inner df">
+        <img src="./imgs/logo.png" alt="logo2">
+        <h2>the yallow</h2>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+
+@media screen and (max-width: 1200px) {
+   html {
+    font-size: 60%;
+  }
+  :root {
+    --col: 8.2rem * 0.8;
+  }
+}
+@media screen and (max-width: 930px){
+  :root{
+    --col:8.2rem * 0.7;
+  }
+}
+/* ====================================
+    ======= mobile ======
+==================================== */
+@media screen and (max-width:640px) {
+   html{
+     font-size: 64.5%;
+   }
+   :root {
+   	--col: 14rem;
+   	--unit4: calc((var(--unit) * var(--n4) - var(--gu2)));
+   	--unit3: calc((var(--unit) * var(--n3) - var(--gu2)));
+   	--unit2: calc((var(--unit) * var(--n2) - var(--gu2)));
+   	--unit1: calc((var(--unit) * var(--n1) - var(--gu2)));
+   }
+   .h1,h1{
+     font-size: 2.4rem;
+   }
+   .box_shadow{
+     height: 100%;
+   }
+   .box_shadow:after{
+     display: none;
+   }
+   .inner{
+     max-width: var(--unit4);
+     box-sizing: border-box;
+   }
+   /*  ======= header ======    */
+   header{
+     height: calc(var(--row) * 14);
+     background: var(--secondary);
+   }
+   .menu_wrap{
+     height: calc(var(--row) * 2);
+     padding: 0;
+   }
+   .menu_wrap > .inner{
+     box-sizing: border_box;
+     max-width: 64rem;
+     padding: 0;
+     column-gap: 2rem;
+     align-items: stretch;
+     justify-content: space-between;
+   }
+   .menu_wrap > .inner >.df{
+     max-width: 64rem;
+     padding: 0;
+     column-gap: 2rem;
+     align-items: stretch;
+     justify-content: space-between;
+   }
+   h1 {
+     height: calc(var(--row) * 2);
+     line-height: calc(var(--row) * 2);
+     flex: 1 1 var(--unit1);
+     background: url(../imgs/logo.png) no-repeat 1rem center/3.2rem;
+   }
+   h1 a{
+     margin-left: 4.2rem;
+     text-transform: capitalize;
+   }
+   nav{
+     flex:1 1 var(--unit3);
+     background-color: var(--primary2);
+   }
+   nav .gnb{
+     width: 100%;
+     line-height: calc(var(--row) * 2);
+   }
+   .gnb li{
+     padding:0 1rem;
+     letter-spacing: -0.1rem;
+     font-size: 3rem;
+   }
+   .gnb li a{font-size: 1.6rem;}
+   .gnb li i{
+     line-height: calc(var(--row) * 2);
+   }
+   .main_video_wrap>.inner{
+     max-width: 100vw;
+     padding: 0;
+     display: block;
+   }
+   .main_video_wrap .left{
+     width: 100%;
+     background-color: #000;
+     background-size: contain;
+   }
+   .main_video_wrap .right{
+     display: none;
+   }
+   .controls{
+     display: none;
+   }
+   /*  ======= .icon_area ======    */
+   .icon_area{
+     height: calc(var(--row) * 5.5);
+     box-shadow: none;
+   }
+   .icon_area .icons li > img{
+     height: calc(var(--row) * 2);
+     padding: 0.2rem 0;
+     margin-bottom:1rem;
+   }
+   /*  ======= .section1 ======    */
+   section:not(.icon_area){
+     padding: 0;
+   }
+   section h2{
+     color: var(--primary2);
+     height: calc(var(--row) * 1);
+     line-height: calc(var(--row) * 1);
+     margin-bottom: var(--row);
+     text-transform: uppercase;
+   }
+   .section1 {
+     height: auto;
+     margin-top:1rem;
+     background-color: var(--white);
+   }
+   .section>.inner{
+     padding: 0;
+     max-width: 100vw;
+   }
+   .date,.section1 h2,.range {
+     display: none;
+   }
+   .section>.inner>h2+.df{
+     flex-wrap:wrap;
+     row-gap: 1rem;
+   }
+   .news_wrap{
+     gap: 1rem;
+     justify-content: space-between;
+     max-width: var(--unit4);
+     width: 100%;
+   }
+   .news_wrap .item{
+     flex: 1 1 var(--unit2);
+   }
+   .news_wrap .video{
+     background-size: auto 100%;
+   }
+   .sns_wrap{
+     max-width: 100vw;
+     width: 100%;
+     display: flex;
+     height: calc(var(--row) * 9);
+     background-color: var(--primary1);
+   }
+   .sns_wrap>div{
+     flex: 1 1 var(--unit2);
+   }
+   .sns_wrap img[alt='twitter'] {
+     height: calc(var(--row) * 7);
+   }
+   .twitter_chat{
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     margin-top: 2rem;
+   }
+   .twit_item{
+     max-width: 90%;
+     height: calc(var(--row) * 1.5);
+     border-radius: 1rem;
+     padding: 0.5rem 1rem;
+     background-color: rgba(255, 255, 255, 1);
+   }
+   .twit_item:after{
+     content: '';
+     position: absolute;
+     border-right: 8px solid white;
+     border-left: 8px solid transparent;
+     left: -12px;
+     bottom: 2rem;
+     width: 15px;
+     height: 15px;
+     border-radius:40%;
+     transform: rotate(90deg);
+   }
+   .tweet_msg{
+    padding-top: 0.5rem 1rem;
+    color: var(--text2);
+
+  }
+   .twit_post {
+    margin-top:  1rem;
+   }
+   .twit_post form{
+    display: inline-block;
+    position: relative;
+    width: 86%;
+   }
+   .twit_post input[type="search"]{
+    outline: none;
+    border:1px solid #d0a806;
+    padding: .5rem .3rem .5rem 3rem;
+    margin: 0.1rem 0;
+    width: 100%;
+    border-radius: 1.6rem;
+    box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.27);
+   }
+   .twit_post button[type='submit']{
+    position: absolute;
+    outline: none;
+    border: none;
+    display: inline-block;
+    background: linear-gradient(to bottom, var(--primary2) 0%,
+    #d4900f 100%);
+    padding: 0 0.3rem 0 0;
+    width: 7rem;
+    height: 2.7rem;
+    font-size: 1.6rem;
+    border-radius: 0px 1.6rem 1.6rem 0;
+    top: 0.1rem;
+    right: 0;
+    color: white;
+   }
+   .twit_post button[type='submit']:hover{
+    background: var(--primary3);
+   }
+   /*  ======= .section2 ======  */
+   section.section2{
+    height: calc(var(--row) * 17);
+    padding: calc(var(--row) * 2) 0;
+   }
+   section.section2 .inner{
+    box-sizing: border-box;
+   }
+   .benefit_wrap{
+    display: none;
+   }
+   .divice_wrap{
+    width: 80%;
+    margin: 2.8rem auto 0;
+    column-gap: 3rem;
+   }
+   footer .inner{
+    box-sizing: border-box;
+   }
+   }

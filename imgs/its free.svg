@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="14" viewBox="0 0 73 14">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 18px;
+        fill: #555;
+        font-family: Pretendard;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="its_free" data-name="its free" class="cls-1" x="-1.044" y="12.825">its free</text>
+</svg>
